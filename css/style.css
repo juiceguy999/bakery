@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: #FFE2B0;
+  --dark: #000000;
+  --secondary: #F15B40;
+}
+
+body {
+  color: var(--dark);
+  background: var(--primary-bg);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1460px;
+  padding: 0 10px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--primary-bg);
+}
+
+.header__nav {
+  margin: 20px 0;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.nav__list-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  z-index: -1;
+  min-height: 100vh;
+  padding-top: 200px;
+  background-image: url('../images/01-Картинка-фона.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__card {
+  position: absolute;
+  right: 20%;
+  bottom: 20%;
+  max-width: 420px;
+  padding: 15px;
+  background: linear-gradient(180deg, rgba(244,213,178,0.8) 0%, rgba(234, 156, 65, 0.8) 100%);
+}
+
+.hero__card-title {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 9px;
+
+}
+
+.hero__card-content {
+  padding: 17px 28px 22px;
+  border: 1px #000000 solid;
+}
+
+.hero__card-text {
+  font-size: 12px;
+}
+
+.hero__container {
+  height: 100%;
+}
+
+.brands {
+  padding: 20px 0;
+}
+
+.brands__items {
+  display: flex;
+  gap: 76px;
+  justify-content: center;
+  align-items: center;
+}
+
+.brands__item-img {
+  max-width: 100%;
+}
+
+.order {
+  padding-bottom: 20px;
+}
+
+.order__title {
+  font-size: 96px;
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+
+.order__text {
+  font-size: 18px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+}
+
+.order__title-span {
+  color: var(--secondary);
+}
+
+.order__link {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  display: block;
+  max-width: fit-content;
+  margin: 0 auto 20px;
+}
+
+.map {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 900px;
+  min-height: 400px;
+}
+
+.order__decor {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 1px;
+  background: #999999;
+}
+
+.footer {
+  padding-bottom: 60px;
+}
